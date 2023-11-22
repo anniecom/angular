@@ -17,6 +17,20 @@ export class PetsComponent {
   cancelar(dadosPets :any) {
     dadosPets.status = 2;
   }
+
+  getImagem(tipo: number) {
+    switch (tipo) {
+      case 1:
+        return './data/cachorro.png';
+      case 2:
+        return './data/gato.png';
+      case 3:
+        return './data/passaro.png';
+      default:
+        return './data/gato.png'; // imagem padrão se o tipo não for 1, 2 ou 3
+    }
+  }
+
 }
 
 
