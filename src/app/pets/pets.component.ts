@@ -24,7 +24,9 @@ export class PetsComponent {
         return '/home/anniecom/angular/src/app/pets/data/passaro.png';
       case 2:
         return '/home/anniecom/angular/src/app/pets/data/passaro.png';
-      case 3:
+      case 5:
+        return '/home/anniecom/angular/src/app/pets/data/passaro.png';
+      case 5:
         return '/home/anniecom/angular/src/app/pets/data/passaro.png';
       default:
         return '/home/anniecom/angular/src/app/pets/data/passaro.png'; // imagem padrão se o tipo não for 1, 2 ou 3
