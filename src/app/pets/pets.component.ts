@@ -21,7 +21,7 @@ export class PetsComponent {
   getImagem(tipo: number) {
     switch (tipo) {
       case 1:
-        return '/home/anniecom/angular/src/app/pets/data/passaro.png';
+        return 'src/app/pets/data/cachorro.png';
       case 2:
         return '/home/anniecom/angular/src/app/pets/data/passaro.png';
       case 5:
