@@ -21,13 +21,13 @@ export class PetsComponent {
   getImagem(tipo: number) {
     switch (tipo) {
       case 1:
-        return './data/cachorro.png';
+        return './data/passaro.png';
       case 2:
-        return './data/gato.png';
+        return './data/passaro.png';
       case 3:
         return './data/passaro.png';
       default:
-        return './data/gato.png'; // imagem padrão se o tipo não for 1, 2 ou 3
+        return './data/passaro.png'; // imagem padrão se o tipo não for 1, 2 ou 3
     }
   }
 
