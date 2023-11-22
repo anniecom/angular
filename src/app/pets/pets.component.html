@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 <div *ngFor="let dadosPets of dadosPets">
   <div class="card">
-    <img src="./src/assets/cachorro.png">
+    <img [src]="./src/assets/cachorro.png">
 
     <p class="nome">{{dadosPets.nome}}</p>
     <span>{{dadosPets.tutor}}</span>
