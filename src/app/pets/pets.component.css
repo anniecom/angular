@@ -1,0 +1,13 @@
+.card{
+    border: 1px solid #7B7474;
+    border-radius: 8px;
+    padding: 1rem;
+    width: var(widthCard);
+}
+
+@media (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+   

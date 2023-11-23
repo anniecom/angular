@@ -1,4 +1,8 @@
-<div *ngFor="let dadosPets of dadosPets">
+<div class="filtro">
+  <input #filter type="text" [(ngModel)]="text" (ngModelChange)="buscaNome()" placeholder="Pesquisa por Nome">
+</div>
+
+<div *ngFor="let dadosPets of filtradosPets">
   <div class="card">
     <section class="nomePet">
       <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">

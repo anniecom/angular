@@ -9,6 +9,7 @@ import { dadosPets } from './data/dados-pets';
 })
 export class PetsComponent  {
   dadosPets = [...dadosPets];
+  filtradosPets = [...dadosPets];
 
   concluir(dadosPets :any) {
     if(!(dadosPets.status == 1 )){
@@ -20,6 +21,40 @@ export class PetsComponent  {
     if(!(dadosPets.status == 2 )){
       dadosPets.status = 2;
     }
+  }
+
+  text: string = '';
+  buscaNome() {
+    
+    var posPet = 0;
+    this.filtradosPets = [];
+
+    if(!this.text){
+      this.filtradosPets = [...dadosPets];
+      return;
+    }
+
+    let tamArray = dadosPets.length;
+    for(let numPets = 0; numPets < tamArray; numPets++){
+
+      let textbusca = this.text.toLowerCase().split('');
+      let nomePet = this.dadosPets[numPets].nome.toLowerCase();
+      let encontrou = false;
+
+      for(let i = 0; i < textbusca.length; i++){
+        if(textbusca[i] == nomePet[i]){
+          encontrou = true;
+        }else{
+          encontrou = false;
+        }
+      }
+
+      if(encontrou){
+        this.filtradosPets[posPet] = dadosPets[numPets];
+        posPet++;
+      }
+    }
+
   }
 
 }
