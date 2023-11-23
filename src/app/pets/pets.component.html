@@ -14,5 +14,6 @@
     </section>
     <button id="ok" *ngIf="dadosPets.status !== 1" (click)="concluir(dadosPets)">Concluído</button>
     <button id="cancel" *ngIf="dadosPets.status !== 2" (click)="cancelar(dadosPets)">Cancelar</button>
+    <p>{{dadosPets.status}}</p>
   </div>
 </div>
