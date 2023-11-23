@@ -7,7 +7,7 @@ import { dadosPets } from './data/dados-pets';
   templateUrl: './pets.component.html',
   styleUrls: ['./pets.component.css']
 })
-export class PetsComponent {
+export class PetsComponent  {
   dadosPets = [...dadosPets];
 
   concluir(dadosPets :any) {
@@ -21,7 +21,6 @@ export class PetsComponent {
       dadosPets.status = 2;
     }
   }
-
 
 }
 

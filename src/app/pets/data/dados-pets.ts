@@ -26,7 +26,7 @@ export const dadosPets = [
     tutor: "(31) 91111 1111",
     dia: "03/11/2023",
     hora: "11:30",
-    procedimento:4,
+    procedimento:1,
     tipo: 2,
     status: 0
   },
