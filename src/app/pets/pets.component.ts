@@ -11,27 +11,13 @@ export class PetsComponent {
   dadosPets = [...dadosPets];
 
   concluir(dadosPets :any) {
-    dadosPets.status = 1;
+      dadosPets.status = 1;
   }
 
   cancelar(dadosPets :any) {
-    dadosPets.status = 2;
+      dadosPets.status = 2;
   }
 
-  getImagem(tipo: number) {
-    switch (tipo) {
-      case 1:
-        return 'src/app/pets/data/cachorro.png';
-      case 2:
-        return '/home/anniecom/angular/src/app/pets/data/passaro.png';
-      case 5:
-        return '/home/anniecom/angular/src/app/pets/data/passaro.png';
-      case 5:
-        return '/home/anniecom/angular/src/app/pets/data/passaro.png';
-      default:
-        return '/home/anniecom/angular/src/app/pets/data/passaro.png'; // imagem padrão se o tipo não for 1, 2 ou 3
-    }
-  }
 
 }
 
