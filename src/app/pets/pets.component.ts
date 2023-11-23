@@ -11,13 +11,15 @@ export class PetsComponent {
   dadosPets = [...dadosPets];
 
   concluir(dadosPets :any) {
-    if(dadosPets.status != 2 ){
+    if(dadosPets.status != 1 ){
       dadosPets.status = 1;
     }
   }
 
   cancelar(dadosPets :any) {
-    dadosPets.status = 2;
+    if(dadosPets.status != 2 ){
+      dadosPets.status = 2;
+    }
   }
 
 
