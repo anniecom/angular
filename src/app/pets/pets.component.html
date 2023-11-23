@@ -12,7 +12,7 @@
     <section class="agenda">
       <p>{{dadosPets.hora + " - " + dadosPets.dia}}</p>
     </section>
-    <button id="ok" *ngIf="dadosPets.status == 0" (click)="concluir(dadosPets)">Concluído</button>
-    <button id="cancel" *ngIf="dadosPets.status == 0" (click)="cancelar(dadosPets)">Cancelar</button>
+    <button id="ok" *ngIf="dadosPets.status !== 1" (click)="concluir(dadosPets)">Concluído</button>
+    <button id="cancel" *ngIf="dadosPets.status !== 2" (click)="cancelar(dadosPets)">Cancelar</button>
   </div>
 </div>
