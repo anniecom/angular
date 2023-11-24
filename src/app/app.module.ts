@@ -7,7 +7,6 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { FooterComponent } from './my-footer/footer.component';
-import { ProductListComponent } from './product-list/product-list.component';
 import { PetsComponent } from './pets/pets.component';
 
 @NgModule({
@@ -22,7 +21,6 @@ import { PetsComponent } from './pets/pets.component';
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent,
     PetsComponent,
     FooterComponent
   ],
