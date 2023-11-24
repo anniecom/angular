@@ -12,7 +12,7 @@ export class PetsComponent  {
   filtradosPets = [...dadosPets];
 
   concluir(dadosPets :any) {
-    if(!(dadosPets.status == 1 )){
+  if(!(dadosPets.status == 1 )){
       dadosPets.status = 1;
     }
   }
@@ -37,22 +37,12 @@ export class PetsComponent  {
     let tamArray = dadosPets.length;
     for(let numPets = 0; numPets < tamArray; numPets++){
 
-      let textbusca = this.text.toLowerCase().split('');
+      let textbusca = this.text.toLowerCase();
       let nomePet = this.dadosPets[numPets].nome.toLowerCase();
-      let encontrou = false;
-
-      for(let i = 0; i < textbusca.length; i++){
-        if(textbusca[i] == nomePet[i]){
-          encontrou = true;
-        }else{
-          encontrou = false;
+        if(nomePet.startsWith(textbusca)){
+          this.filtradosPets[posPet] = dadosPets[numPets];
+          posPet++;
         }
-      }
-
-      if(encontrou){
-        this.filtradosPets[posPet] = dadosPets[numPets];
-        posPet++;
-      }
     }
 
   }

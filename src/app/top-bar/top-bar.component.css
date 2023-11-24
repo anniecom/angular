@@ -1,4 +1,13 @@
+h1,strong{
+    color: white
+}
 
+strong{
+    font-weight: 800;
+}
+h1{
+    font-weight: 600;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

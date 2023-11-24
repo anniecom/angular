@@ -1,13 +1,126 @@
-.card{
-    border: 1px solid #7B7474;
-    border-radius: 8px;
-    padding: 1rem;
-    width: var(widthCard);
+:root {
+  --widthCard: 100%;
 }
 
-@media (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
+.card{
+  border: 1px solid #D4D4D4;
+  border-radius: 8px;
+  padding: 1.3rem;
+  width: 20rem;
+  margin: 2rem 0;
+}
+
+
+.nomePet{
+  display: inline;
+}
+
+.buttonOK{
+  color:#6976BA;
+  background-color: transparent;
+  border: 2.4px solid #6976BA;
+  font-weight: 800;
+  border-radius: 8px;
+}
+
+.buttonCancel{
+  color:#D65858;
+  background-color: transparent;
+  border: 2.4px solid #D65858;
+  font-weight: 800;
+  border-radius: 8px;
+}
+
+.nomePet {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinha verticalmente */
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.nomePet .nome{
+  border-bottom: 1px solid #D4D4D4;
+  min-width: 50%;
+  max-width: 80%;
+  margin-block: 0;
+  color: #21263E;
+}
+
+.nomePet svg {
+  margin-right: 10px; /* Espaço à direita do SVG */
+}
+
+.tutor{
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.procedimento{
+  background-color: #F2F2F2;
+  padding: 5% 0 5% 10%;
+  margin-bottom: 1rem;
+}
+
+.card .procedimento {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* ou qualquer outra porcentagem que funcione para você */
+}
+
+.procedimento p{
+  color: black;
+  border-left: 3px solid black;
+  margin-left: 1rem;
+  padding: 10%;
+  margin-block: 0;
+}
+
+.procedimento .agenda{
+  font-weight: 700;
+  border: 0;
+  margin-left: 1rem;
+  padding: 0 0 5% 0 !important;
+}
+
+.card .botoes{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.botoes button{
+  margin: 0 0.3rem;
+}
+
+.filtro input{
+  border: 1px solid white;
+  border-radius: 22px;
+  width: 90%;
+  height: 3rem;
+  margin: 1rem;
+}
+
+.filtro {
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to bottom, rgba(147, 163, 245, 0.8), rgba(147, 163, 245, 0.099));
+    padding: 0 !important;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 16px;
   }
-   
+
+.main .cadastros, .main h1{
+  margin: auto;
+  width: 80%;
+}
+
+.main h1{
+  font-weight: 600;
+  color: #21263E;
+}
+
